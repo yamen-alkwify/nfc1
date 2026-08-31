@@ -468,6 +468,7 @@ footer {
 .ux-icon--email { --ux-icon: url("/assets/icons/email-icon.svg"); }
 .ux-icon--globe { --ux-icon: url("/assets/icons/globe-line-icon.svg"); }
 .ux-icon--add-contact { --ux-icon: url("/assets/icons/add-contact-icon.svg"); }
+.ux-icon--profile { --ux-icon: url("/assets/icons/user-profile-icon.svg"); }
 .ux-icon--share { --ux-icon: url("/assets/icons/share-icon.svg"); }
 .ux-icon--check { --ux-icon: url("/assets/icons/check-mark-icon.svg"); }
 .ux-icon--growth { --ux-icon: url("/assets/icons/growth-icon.svg"); }
