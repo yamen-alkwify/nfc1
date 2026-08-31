@@ -94,7 +94,7 @@ img { display: block; }
   display: flex;
   direction: ltr;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .brand { display: block; width: 170px; }
@@ -141,7 +141,7 @@ img { display: block; }
 
 .portrait-arch {
   position: relative;
-  width: min(78vw, 320px);
+  width: min(72vw, 294px);
   aspect-ratio: 0.73;
   margin: 0 auto;
   overflow: hidden;
@@ -236,7 +236,16 @@ img { display: block; }
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.identity-company { margin: 0; color: var(--gold); font-family: Georgia, "Times New Roman", serif; font-size: 16px; letter-spacing: 0.12em; }
+.identity-role {
+  margin: 0;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.15em;
+}
+
+.identity-company { margin: 5px 0 0; color: var(--green); font-family: "Segoe UI", Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; }
 
 .primary-actions {
   width: calc(100% - 30px);
@@ -414,12 +423,27 @@ img { display: block; }
 .company-card {
   display: grid;
   direction: ltr;
-  grid-template-columns: 82px 1fr 18px;
+  grid-template-columns: 94px 1fr 18px;
   align-items: center;
   gap: 12px;
 }
 
-.company-card > img { width: 82px; height: auto; }
+.company-logo-vertical {
+  position: relative;
+  width: 94px;
+  height: 105px;
+  overflow: hidden;
+}
+
+.company-logo-vertical img {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: 170px;
+  max-width: none;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
 .company-copy { min-width: 0; text-align: left; }
 .company-location { display: block; margin-top: 4px; color: var(--muted); font-family: "Segoe UI", Arial, sans-serif; font-size: 10.5px; line-height: 1.35; }
 .company-link { display: inline-block; margin-top: 8px; color: var(--green); font-family: "Segoe UI", Arial, sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 0.02em; }
@@ -488,7 +512,7 @@ footer {
   .site-header { height: 82px; padding-inline: 17px; }
   .brand { width: 154px; }
   .hero { min-height: 0; padding-inline: 13px; }
-  .portrait-arch { width: min(77vw, 288px); }
+  .portrait-arch { width: min(71vw, 270px); }
   .identity { margin-top: -52px; }
   .identity h1 { font-size: 32px; }
   .identity-ar { font-size: 23px; }
