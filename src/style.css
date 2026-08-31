@@ -116,11 +116,11 @@ img { display: block; }
 .arch-ornament {
   position: absolute;
   z-index: -1;
-  top: 86px;
-  width: 118px;
-  height: 300px;
-  opacity: 0.32;
-  border: 1px solid rgba(205, 164, 59, 0.16);
+  top: 105px;
+  width: 98px;
+  height: 258px;
+  opacity: 0.52;
+  border: 1px solid rgba(205, 164, 59, 0.25);
   border-bottom: 0;
   border-radius: 66px 66px 0 0;
 }
@@ -129,15 +129,15 @@ img { display: block; }
 .arch-ornament::after {
   content: "";
   position: absolute;
-  border: 1px solid rgba(205, 164, 59, 0.18);
+  border: 1px solid rgba(205, 164, 59, 0.28);
   border-bottom: 0;
   border-radius: 60px 60px 0 0;
 }
 
 .arch-ornament::before { inset: 10px 10px 0; }
 .arch-ornament::after { inset: 20px 20px 0; }
-.arch-ornament--start { left: -49px; }
-.arch-ornament--end { right: -49px; }
+.arch-ornament--start { left: -40px; }
+.arch-ornament--end { right: -40px; }
 
 .portrait-arch {
   position: relative;
