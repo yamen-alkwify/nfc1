@@ -341,7 +341,7 @@ img { display: block; }
 .card-heading {
   display: grid;
   direction: ltr;
-  grid-template-columns: 34px 1fr 20px;
+  grid-template-columns: 34px 1fr;
   align-items: center;
   gap: 10px;
 }
@@ -350,8 +350,6 @@ img { display: block; }
 .card-heading h2,
 .company-copy h2 { margin: 0; color: var(--green-deep); font-family: Georgia, "Times New Roman", serif; font-size: 17px; font-weight: 500; letter-spacing: 0.025em; }
 .card-heading h2 { padding-bottom: 7px; border-bottom: 1px solid rgba(205, 164, 59, 0.6); text-align: left; }
-.card-arrow { color: var(--green); font-family: Arial, sans-serif; font-size: 31px; font-weight: 300; line-height: 1; }
-
 .about-copy { margin: 9px 42px 0 0; color: #4d544f; font-size: 14.5px; font-weight: 400; line-height: 1.72; text-align: right; }
 .about-copy p { margin: 0; }
 .about-copy p + p { margin-top: 8px; }
@@ -423,7 +421,7 @@ img { display: block; }
 .company-card {
   display: grid;
   direction: ltr;
-  grid-template-columns: 62px 1fr 18px;
+  grid-template-columns: 62px 1fr;
   align-items: center;
   gap: 12px;
 }
