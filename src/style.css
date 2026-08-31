@@ -423,15 +423,15 @@ img { display: block; }
 .company-card {
   display: grid;
   direction: ltr;
-  grid-template-columns: 94px 1fr 18px;
+  grid-template-columns: 62px 1fr 18px;
   align-items: center;
   gap: 12px;
 }
 
 .company-logo-vertical {
   position: relative;
-  width: 94px;
-  height: 105px;
+  width: 62px;
+  height: 68px;
   overflow: hidden;
 }
 
@@ -439,7 +439,7 @@ img { display: block; }
   position: absolute;
   top: 47%;
   left: 50%;
-  width: 170px;
+  width: 92px;
   max-width: none;
   height: auto;
   transform: translate(-50%, -50%);
