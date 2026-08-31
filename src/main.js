@@ -18,7 +18,9 @@ const contact = {
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const toast = document.querySelector("#toast");
-const toastText = toast.querySelector("span");
+const toastText = toast.querySelector("span:last-child");
+const menuButton = document.querySelector("#menuButton");
+const quickMenu = document.querySelector("#quickMenu");
 let toastTimer;
 
 function showToast(message) {
@@ -74,14 +76,36 @@ document.querySelector("#shareButton").addEventListener("click", async () => {
   }
 });
 
+function setMenu(open) {
+  menuButton.classList.toggle("is-open", open);
+  quickMenu.classList.toggle("is-open", open);
+  menuButton.setAttribute("aria-expanded", String(open));
+}
+
+menuButton.addEventListener("click", () => {
+  setMenu(!quickMenu.classList.contains("is-open"));
+});
+
+quickMenu.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => setMenu(false));
+});
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest(".site-header")) setMenu(false);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setMenu(false);
+});
+
 function initAnimations() {
   if (reducedMotion) return;
 
   const intro = gsap.timeline({ defaults: { ease: "power3.out" } });
   intro
-    .from(".brand-logo", { y: -18, opacity: 0, scale: 0.97, duration: 0.62 })
-    .from(".identity > *", { y: 18, opacity: 0, stagger: 0.07, duration: 0.48 }, "-=0.35")
-    .from(".biography p", { y: 14, opacity: 0, stagger: 0.06, duration: 0.42 }, "-=0.24");
+    .from(".brand-logo, .menu-button", { y: -12, opacity: 0, stagger: 0.08, duration: 0.52 })
+    .from(".arch-ornament", { opacity: 0, duration: 0.5 }, "-=0.32")
+    .from(".identity > *", { y: 14, opacity: 0, stagger: 0.055, duration: 0.42 }, "-=0.2");
 
   gsap.utils.toArray("[data-reveal]").forEach((element) => {
     gsap.from(element, {

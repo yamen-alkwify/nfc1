@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#f7f2e9" />
     <meta name="description" content="بطاقة التواصل الرقمية الخاصة بـ Obayda Abdul Baky" />
     <meta property="og:title" content="Obayda Abdul Baky" />
     <meta property="og:description" content="بطاقة التواصل الرقمية" />
@@ -13,99 +13,136 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="brand-hero" id="top">
-        <div class="brand-geometry" aria-hidden="true"></div>
-        <img
-          class="brand-logo"
-          src="/assets/cham-holding-logo-hq.png"
-          width="1772"
-          height="756"
-          alt="شام القابضة — Cham Holding"
-          fetchpriority="high"
-        />
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Cham Holding">
+          <img
+            class="brand-logo"
+            src="/assets/cham-holding-logo-hq.png"
+            width="1772"
+            height="756"
+            alt="شام القابضة — Cham Holding"
+            fetchpriority="high"
+          />
+        </a>
+
+        <button class="menu-button" id="menuButton" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="quickMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="quick-menu" id="quickMenu" aria-label="القائمة السريعة">
+          <a href="#about">نبذة</a>
+          <a href="#experience">الخبرات</a>
+          <a href="#contact">التواصل</a>
+        </nav>
       </header>
 
-      <main>
-        <section class="profile" aria-labelledby="profile-name">
-          <div class="portrait-stage">
-            <div class="portrait-ring">
-              <div class="portrait-media">
-                <img
-                  class="portrait"
-                  src="/assets/profile-original.jpeg"
-                  width="863"
-                  height="1194"
-                  alt="Obayda Abdul Baky"
-                  fetchpriority="high"
-                />
-              </div>
-            </div>
+      <main id="top">
+        <section class="hero" aria-labelledby="profile-name">
+          <div class="arch-ornament arch-ornament--start" aria-hidden="true"></div>
+          <div class="arch-ornament arch-ornament--end" aria-hidden="true"></div>
+
+          <div class="portrait-arch">
+            <span class="portrait-spark portrait-spark--start" aria-hidden="true"></span>
+            <span class="portrait-spark portrait-spark--end" aria-hidden="true"></span>
+            <img
+              class="portrait"
+              src="/assets/profile-original.jpeg"
+              width="863"
+              height="1194"
+              alt="Obayda Abdul Baky"
+              fetchpriority="high"
+            />
           </div>
 
           <div class="identity">
-            <h1 id="profile-name" dir="ltr">Obayda Abdul Baky</h1>
-            <p>عبيدة عبد الباقي</p>
+            <h1 id="profile-name" dir="ltr"><span>OBAYDA</span><span>ABDUL BAKY</span></h1>
+            <p class="identity-ar">عبيدة عبد الباقي</p>
+            <span class="identity-divider" aria-hidden="true"></span>
+            <p class="identity-company" dir="ltr">CHAM HOLDING</p>
           </div>
+        </section>
 
-          <div class="biography">
+        <section class="primary-actions" aria-label="الإجراءات الرئيسية" data-reveal>
+          <button class="action-button action-button--primary" id="contactButton" type="button">
+            <span class="action-button-icon ux-icon ux-icon--add-contact" aria-hidden="true"></span>
+            <span>SAVE CONTACT</span>
+          </button>
+          <button class="action-button action-button--secondary" id="shareButton" type="button">
+            <span class="action-button-icon ux-icon ux-icon--share" aria-hidden="true"></span>
+            <span>SHARE PROFILE</span>
+          </button>
+        </section>
+
+        <nav class="contact-grid" id="contact" aria-label="وسائل التواصل" data-reveal>
+          <a href="tel:+963991239999" aria-label="اتصال">
+            <span class="contact-grid-icon ux-icon ux-icon--call" aria-hidden="true"></span>
+            <span>CALL</span>
+          </a>
+          <a href="mailto:Obayda.abdulbaky@chamholding.sy" aria-label="البريد الإلكتروني">
+            <span class="contact-grid-icon ux-icon ux-icon--email" aria-hidden="true"></span>
+            <span>EMAIL</span>
+          </a>
+          <a href="https://wa.me/963986333334" target="_blank" rel="noreferrer" aria-label="واتساب">
+            <span class="contact-grid-icon ux-icon ux-icon--whatsapp" aria-hidden="true"></span>
+            <span>WHATSAPP</span>
+          </a>
+          <a href="https://damacham.sy/" target="_blank" rel="noreferrer" aria-label="الموقع الإلكتروني">
+            <span class="contact-grid-icon ux-icon ux-icon--globe" aria-hidden="true"></span>
+            <span>WEBSITE</span>
+          </a>
+        </nav>
+
+        <section class="content-card about-card" id="about" data-reveal>
+          <div class="card-heading">
+            <span class="card-heading-icon ux-icon ux-icon--add-contact" aria-hidden="true"></span>
+            <h2>ABOUT</h2>
+            <span class="card-arrow" aria-hidden="true">›</span>
+          </div>
+          <div class="about-copy">
             <p>متخصص في الاستثمار والتطوير العقاري وإدارة المشاريع، ويتمتع بمسيرة مهنية متنوعة في التخطيط الاستراتيجي وتطوير الأعمال وإدارة الاستثمارات.</p>
             <p>تولّى عدداً من المناصب القيادية والإدارية، وشارك في إدارة والإشراف على مشاريع استراتيجية واستثمارية وتنموية، إلى جانب العمل في مجالات دراسات الجدوى الاقتصادية والتنمية المستدامة.</p>
             <p>كما يمتلك خلفية متعددة التخصصات تجمع بين الاقتصاد والعلوم السياسية والإعلام والتسويق، بما يدعم رؤيته في الإدارة وتطوير الشركات وقيادة المشاريع.</p>
           </div>
         </section>
 
-        <section class="contact-section" id="contact" aria-label="روابط التواصل">
-          <div class="contact-list">
-            <a class="contact-row" href="https://wa.me/963986333334" target="_blank" rel="noreferrer" data-reveal>
-              <span class="contact-icon contact-icon--whatsapp" aria-hidden="true"><span class="ux-icon ux-icon--whatsapp"></span></span>
-              <strong class="contact-value" dir="ltr">+963 986 333 334</strong>
-            </a>
-
-            <a class="contact-row" href="tel:+963991239999" data-reveal>
-              <span class="contact-icon" aria-hidden="true"><span class="ux-icon ux-icon--call"></span></span>
-              <strong class="contact-value" dir="ltr">+963 991 239 999</strong>
-            </a>
-
-            <a class="contact-row" href="mailto:Obayda.abdulbaky@chamholding.sy" data-reveal>
-              <span class="contact-icon" aria-hidden="true"><span class="ux-icon ux-icon--email"></span></span>
-              <strong class="contact-value" dir="ltr">Obayda.abdulbaky@chamholding.sy</strong>
-            </a>
-
-            <a class="contact-row" href="https://damacham.sy/" target="_blank" rel="noreferrer" data-reveal>
-              <span class="contact-icon" aria-hidden="true"><span class="ux-icon ux-icon--globe"></span></span>
-              <strong class="contact-value" dir="ltr">damacham.sy</strong>
-            </a>
-
-            <a class="contact-row" href="https://maps.app.goo.gl/JiHT5zXGw23UBgaLA" target="_blank" rel="noreferrer" data-reveal>
-              <span class="contact-icon" aria-hidden="true"><span class="ux-icon ux-icon--location"></span></span>
-              <strong class="contact-value" dir="ltr">Yafour, The Eight Gate — Damascus</strong>
-            </a>
-          </div>
-
-          <nav class="social-links" aria-label="حسابات التواصل" data-reveal>
-            <a href="https://www.instagram.com/cham_holding?igsi=bjc2cWNvcHF0dXpv&amp;utm_source=qr" target="_blank" rel="noreferrer" aria-label="Instagram">
-              <span class="ux-icon ux-icon--instagram" aria-hidden="true"></span>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61593720625483&amp;mibextid=wwXIfr" target="_blank" rel="noreferrer" aria-label="Facebook">
-              <span class="ux-icon ux-icon--facebook" aria-hidden="true"></span>
-            </a>
-            <a href="https://maps.app.goo.gl/JiHT5zXGw23UBgaLA" target="_blank" rel="noreferrer" aria-label="الموقع على الخريطة">
-              <span class="ux-icon ux-icon--location" aria-hidden="true"></span>
-            </a>
-          </nav>
-
-          <div class="contact-actions">
-            <button class="save-contact" id="contactButton" type="button" data-reveal>
-              <span class="action-icon" aria-hidden="true"><span class="ux-icon ux-icon--add-contact"></span></span>
-              <span>حفظ جهة الاتصال</span>
-            </button>
-            <button class="share-contact" id="shareButton" type="button" data-reveal>
-              <span class="action-icon" aria-hidden="true"><span class="ux-icon ux-icon--share"></span></span>
-              <span>مشاركة الرابط</span>
-            </button>
+        <section class="experience-card" id="experience" data-reveal>
+          <h2>LEADERSHIP &amp; EXPERIENCE</h2>
+          <div class="experience-grid">
+            <div class="experience-item">
+              <span class="experience-icon ux-icon ux-icon--growth" aria-hidden="true"></span>
+              <strong>REAL ESTATE</strong>
+              <span>INVESTMENT</span>
+            </div>
+            <div class="experience-item">
+              <span class="experience-icon ux-icon ux-icon--building" aria-hidden="true"></span>
+              <strong>PROJECT</strong>
+              <span>MANAGEMENT</span>
+            </div>
+            <div class="experience-item">
+              <span class="experience-icon ux-icon ux-icon--leadership" aria-hidden="true"></span>
+              <strong>STRATEGIC</strong>
+              <span>LEADERSHIP</span>
+            </div>
+            <div class="experience-item">
+              <span class="experience-icon ux-icon ux-icon--target" aria-hidden="true"></span>
+              <strong>SUSTAINABLE</strong>
+              <span>DEVELOPMENT</span>
+            </div>
           </div>
         </section>
+
+        <section class="content-card company-card" data-reveal>
+          <img src="/assets/cham-holding-logo-new.png" width="443" height="189" alt="Cham Holding" />
+          <div class="company-copy">
+            <h2>CHAM HOLDING</h2>
+            <a class="company-location" href="https://maps.app.goo.gl/JiHT5zXGw23UBgaLA" target="_blank" rel="noreferrer">Yafour, The Eight Gate — Damascus</a>
+            <a class="company-link" href="https://damacham.sy/" target="_blank" rel="noreferrer">VISIT COMPANY WEBSITE ↗</a>
+          </div>
+          <span class="card-arrow" aria-hidden="true">›</span>
+        </section>
       </main>
+
+      <footer>© 2026 CHAM HOLDING. ALL RIGHTS RESERVED.</footer>
     </div>
 
     <div class="toast" id="toast" role="status" aria-live="polite">
