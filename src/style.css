@@ -172,22 +172,9 @@ svg, img { display: block; }
   display: none;
 }
 
-.portrait-eagle {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  width: 112%;
-  height: auto;
-  opacity: 0.17;
-  transform: translate(-50%, -50%);
-  filter: saturate(0.72) brightness(1.14);
-  pointer-events: none;
-}
-
 .portrait-ring {
   position: absolute;
-  top: 67%;
+  top: 62%;
   left: 50%;
   width: min(60%, 340px);
   aspect-ratio: 1;
